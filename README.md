@@ -16,7 +16,7 @@ to find and fix them, then fill in `release-notes.md` with evidence.
   create the bucket metadata resource — it should **not** hand-define a
   duplicate `local_file` resource for the same purpose.
 - `variables.tf` / `outputs.tf` reference real, declared variable and module
-  output names only.
+  output names only. 
 - State stays local and isolated per environment. `backend.tf` declares an
   empty `local` backend, and each environment supplies its own state path via
   a partial backend config file:
