@@ -14,7 +14,7 @@ services:
   # Local, ₹0 artifact registry for pushing/pulling images without a paid
   # registry account. Not required to grade the build itself.
   registry:
-    image: registry:2
+    image: registry
     ports:
       - "5050:5000"  # host 5000 often taken (e.g. macOS AirPlay Receiver)
     volumes:
